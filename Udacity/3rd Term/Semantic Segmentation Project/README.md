@@ -26,7 +26,10 @@ been picked.
 
 The final loss amounted at 0.017 at the 10th epoch.
 
-![image](https://user-images.githubusercontent.com/29335742/223194262-858ecf26-1c41-44aa-a10a-0d41df1c57ff.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223194262-858ecf26-1c41-44aa-a10a-0d41df1c57ff.png" width="10%" height="10%">
+<\p>
+
 
 
 Below a bunch of the results over the images elaborated.
