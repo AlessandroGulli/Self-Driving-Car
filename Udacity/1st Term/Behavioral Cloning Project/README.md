@@ -1,22 +1,18 @@
-
-
 # **Behavioral Cloning**
-
-![c7184e09691d10de7485c9c098d32fd2682232a1](https://user-images.githubusercontent.com/29335742/223131954-e13f55b5-6193-4bdf-bb76-758f03d48642.gif)
-
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/29335742/223131954-e13f55b5-6193-4bdf-bb76-758f03d48642.gif" alt="animated" />
+</p>
 
 ### Model Architecture and Training Strategy
 
 #### 1. My model consists of a convolution neural network as shown below.
 
 <p align="center">
- ![image](https://user-images.githubusercontent.com/29335742/223132315-d2c81e1b-4410-4942-a5bf-e5d2b2c182e1.png)
+  <img src="https://user-images.githubusercontent.com/29335742/223132315-d2c81e1b-4410-4942-a5bf-e5d2b2c182e1.png">
 </p>
 
-The model includes RELU layers to introduce nonlinearity (model.py, line
-139 -158), and the data is normalized in the model using a Keras lambda
+The model includes RELU layers to introduce nonlinearity (model.py, line 139 -158), and the data is normalized in the model using a Keras lambda
 layer (model.py line 133).
-
 
 #### 2. Attempts to reduce overfitting in the model
 
@@ -78,13 +74,17 @@ brightness adjustment as well as randomized shadow and randomized horizon
 shift to mimic the conditions of a hilly environment or a cloudy day.
 Below an example of distorted image produced.(model.py lines 36-64)
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223132490-ff675d27-0560-40da-9a66-ea314270bac0.png" alt="Logo" title="Original">
+  <em>Original</em>
+</p>
 
-original
-![image](https://user-images.githubusercontent.com/29335742/223132490-ff675d27-0560-40da-9a66-ea314270bac0.png)
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223132540-95f6c933-c940-4af8-9578-f91b1bf6a225.png" alt="Logo" title="Distorted">
+  <em>Distorted</em>
+</p>
 
-distorted
-![image](https://user-images.githubusercontent.com/29335742/223132540-95f6c933-c940-4af8-9578-f91b1bf6a225.png)
 
 
 After that I tried to introduce dropout layers with different keep
@@ -133,22 +133,30 @@ flipped.
 
 For example, here is a couple of images that have been flipped:
 
-0.3488 original
-
-![image](https://user-images.githubusercontent.com/29335742/223132783-8549279a-60f2-455c-94cc-2c72501c3b17.png)
 
 
-- 0.3488 flipped
-![image](https://user-images.githubusercontent.com/29335742/223132867-820507b6-7e0d-490f-8432-76283dad6075.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223132783-8549279a-60f2-455c-94cc-2c72501c3b17.png" alt="Logo" title="0.3488 original">
+  <em>0.3488 original</em>
+</p>
 
 
-0.3523 original
-![image](https://user-images.githubusercontent.com/29335742/223132939-834e7cff-afef-440d-819b-583b0adf871a.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223132867-820507b6-7e0d-490f-8432-76283dad6075.png" alt="Logo" title="- 0.3488 flipped">
+  <em>- 0.3488 flipped</em>
+</p>
 
 
-- 0.3523 flipped
-![image](https://user-images.githubusercontent.com/29335742/223133006-3f4b8ad6-328a-4a82-b082-d4a3ae93aab6.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223132939-834e7cff-afef-440d-819b-583b0adf871a.png" alt="Logo" title="0.3523 original">
+  <em>0.3523 original</em>
+</p>
 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223133006-3f4b8ad6-328a-4a82-b082-d4a3ae93aab6.png" alt="Logo" title="- 0.3523 flipped">
+  <em>- 0.3523 flipped</em>
+</p>
 
 After the collection process, I had 7634 number of data points.
 
