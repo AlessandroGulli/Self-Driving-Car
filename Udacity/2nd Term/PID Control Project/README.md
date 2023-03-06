@@ -1,5 +1,5 @@
- Describe the effect each of the P, I, D components had in your implementation.
-```
+# P, I, D components
+
 Before introducing my method to tune the three constants of the algorithm I’d like to spend some
 words about the characteristics of each of them.
 
@@ -27,9 +27,9 @@ All the videos before cited are placed into the project’s Videos folder. Unfor
 smartphone since any other applications for recording the PC screen conditioned the performance of the simulator and
 in turn the car behavior.
 
-```
- Describe how the final hyperparameters were chosen.
-```
+
+# Final Hyperparameters
+
 The hyperparameters were tuned manually at first seeing that automating the parameters just
 with the help of the Twiddle algorithm, due to the narrow lane, made the car off the track. After a
 correct choice of the parameters, I implemented the Twiddle method through which I found the
