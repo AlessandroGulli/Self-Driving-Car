@@ -3,9 +3,8 @@
 ## Introduction
 
 The aim of the project is to drive safely on a highway, equipped with three lanes and many cars around, for 7km without incident;
-this involves avoiding abruptly acceleration and deceleration, containing jerk and preventing collisions with the other vehicles. The
-
-## speed limit is set to 50 MPH.
+this involves avoiding abruptly acceleration and deceleration, containing jerk and preventing collisions with the other vehicles. 
+The speed limit is set to 50 MPH.
 
 ## Environment and Data Provided
 
@@ -24,51 +23,15 @@ Implemented a finite state machine which allows changing target lane relying on 
 
 The states implemented are the following:
 
-```
- KL , Keep Lane
- LCL , Lane Change Left
- LCR , Lane Change Right
-```
+
+* KL , Keep Lane
+* LCL , Lane Change Left
+* LCR , Lane Change Right
+
 Below is illustrated a scheme of the state machine.
 
-# KL
+![image](https://user-images.githubusercontent.com/29335742/223189175-90250d1f-1245-4ee0-9bab-20c91d5f3b95.png)
 
-```
-Path Planning
-Decision
-Algorithm
-```
-```
-Change
-Lane Left
-?
-```
-```
-N
-```
-(^)? (^)
-Y
-?
-Change
-Lane Right
-?
-N
-? (^) Y
-?
-
-# LCL
-
-# LCR
-
-```
-Change Lane
-Executed
-?
-```
-? (^)
-N
-N
-Y
 
 
 ## Best Trajectory’s Choice
@@ -81,12 +44,12 @@ risk.
 
 The cost functions created are based on the following principles:
 
-```
- The ratio of the nearest car velocity and that of the ego car
- The predictions of the other car’s positions at the next step
- The distance from the vehicle ahead and behind
- The numbers of cars in a single lane
-```
+
+* The ratio of the nearest car velocity and that of the ego car
+* The predictions of the other car’s positions at the next step
+* The distance from the vehicle ahead and behind
+* The numbers of cars in a single lane
+
 For every single lane is associated a penalty if the objective is too far from the current position of the ego car coordinates.
 
 ## Adas System
