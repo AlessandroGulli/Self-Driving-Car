@@ -1,21 +1,24 @@
 
 
-#**Behavioral Cloning**
+# **Behavioral Cloning**
 
-##Writeup Template
+![c7184e09691d10de7485c9c098d32fd2682232a1](https://user-images.githubusercontent.com/29335742/223131954-e13f55b5-6193-4bdf-bb76-758f03d48642.gif)
 
-###Model Architecture and Training Strategy
 
-####1.
+### Model Architecture and Training Strategy
 
-My model consists of a convolution neural network as shown below.
+#### 1. My model consists of a convolution neural network as shown below.
+
+<p align="center">
+ ![image](https://user-images.githubusercontent.com/29335742/223132315-d2c81e1b-4410-4942-a5bf-e5d2b2c182e1.png)
+</p>
 
 The model includes RELU layers to introduce nonlinearity (model.py, line
 139 -158), and the data is normalized in the model using a Keras lambda
 layer (model.py line 133).
 
 
-####2. Attempts to reduce overfitting in the model
+#### 2. Attempts to reduce overfitting in the model
 
 The model contains regularization layers in order to reduce overfitting
 (model.py lines 152-158).
@@ -23,12 +26,12 @@ The model contains regularization layers in order to reduce overfitting
 The model was tested by running it through the simulator and ensuring
 that the vehicle could stay on the track.
 
-####3. Model parameter tuning
+#### 3. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned
 manually (model.py line 160).
 
-####4. Appropriate training data
+#### 4. Appropriate training data
 
 Training data was chosen to keep the vehicle driving on the road. I used
 a combination of solely center lane driving provided by Udacity, without
@@ -36,9 +39,9 @@ recovery data from the left and right sides of the road.
 
 For details about how I created the training data, see the next section.
 
-###Model Architecture and Training Strategy
+### Model Architecture and Training Strategy
 
-####1. Solution Design Approach
+#### 1. Solution Design Approach
 
 The overall strategy for deriving a model architecture was to document
 myself about this kind of approach, so I came across an interesting
@@ -77,68 +80,33 @@ Below an example of distorted image produced.(model.py lines 36-64)
 
 
 original
+![image](https://user-images.githubusercontent.com/29335742/223132490-ff675d27-0560-40da-9a66-ea314270bac0.png)
+
 
 distorted
+![image](https://user-images.githubusercontent.com/29335742/223132540-95f6c933-c940-4af8-9578-f91b1bf6a225.png)
+
 
 After that I tried to introduce dropout layers with different keep
 probability but unsuccessfully, since the car punctually finished off the
 road after the bridge. The turning point was when I used for each fully
-connected layer a L2 regularization equals to 0.00001 (model.py lines 152
-
-- 158)
+connected layer a L2 regularization equals to 0.00001 (model.py lines 152 - 158)
 
 At the end of the process, the vehicle is able to drive autonomously
 around the track without leaving the road.
 
 
-####2. Final Model Architecture
+#### 2. Final Model Architecture
 
 The final model architecture (model.py lines 130-160) consisted of a
 convolution neural network with the following layers and layer sizes ...
 
 Here is a visualization of the architecture
 
-```
-Layer Function Regularization
-```
-Input layer (160 x 320 x3)
+![image](https://user-images.githubusercontent.com/29335742/223132669-077b5893-9109-48b0-b11b-8b115a43a3d0.png)
 
-Lambda : Normalization
-Cropping: (66x200x3)
 
-Convolution: 5x5 kernel, 2x2 stride,
-24 depth
-
-```
-Activation: RELU
-```
-Convolution: 5x5 kernel, 2x2 stride,
-36 depth
-
-```
-Activation: RELU
-```
-Convolution: 5x5 kernel, 2x2 stride,
-
-48 depth
-
-```
-Activation: RELU
-```
-Convolution: 3x3 kernel, 64 depth Activation: RELU
-
-Convolution: 3x3 kernel, 64 depth Activation: RELU
-Flatten
-
-Fully Connected: 100 depth Activation: RELU L2 regularization, L2 = 0.
-
-Fully Connected: 50 depth Activation: RELU L2 regularization, L2 = 0.
-
-Fully Connected: 10 depth Activation: RELU L2 regularization, L2 = 0.
-
-Fully Connected: 1 depth Activation: RELU L2 regularization, L2 = 0.
-
-####3. Creation of the Training Set & Training Process
+#### 3. Creation of the Training Set & Training Process
 
 Due to lack of time and without a GPU I tried since from the beginning to
 train the Net with just the samples data provided by Udacity. So I didn’t
@@ -167,11 +135,19 @@ For example, here is a couple of images that have been flipped:
 
 0.3488 original
 
+![image](https://user-images.githubusercontent.com/29335742/223132783-8549279a-60f2-455c-94cc-2c72501c3b17.png)
+
+
 - 0.3488 flipped
+![image](https://user-images.githubusercontent.com/29335742/223132867-820507b6-7e0d-490f-8432-76283dad6075.png)
+
 
 0.3523 original
+![image](https://user-images.githubusercontent.com/29335742/223132939-834e7cff-afef-440d-819b-583b0adf871a.png)
+
 
 - 0.3523 flipped
+![image](https://user-images.githubusercontent.com/29335742/223133006-3f4b8ad6-328a-4a82-b082-d4a3ae93aab6.png)
 
 
 After the collection process, I had 7634 number of data points.
@@ -188,3 +164,5 @@ epoch, which represents the best fit between the two parameters.
 
 I used an adam optimizer so that manually training the learning rate
 wasn't necessary.
+
+![image](https://user-images.githubusercontent.com/29335742/223133109-150367a5-5a3b-4fe4-b874-246a26a1b19c.png)
