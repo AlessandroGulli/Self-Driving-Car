@@ -1,4 +1,5 @@
-# P, I, D components
+# PID Controller Components
+
 
 Before introducing my method to tune the three constants of the algorithm I’d like to spend some
 words about the characteristics of each of them.
