@@ -27,8 +27,10 @@ The goals / steps of this project are the following:
 Here is an exploratory visualization of the data set. It is a bar chart
 showing how the data are distributed per classes.
 
-![image](https://user-images.githubusercontent.com/29335742/223123373-ea67db30-5701-4b85-a2b1-3dc4a3269687.png)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223123373-ea67db30-5701-4b85-a2b1-3dc4a3269687.png" width="50%" height="50%"> 
+</p>
+  
 ### Design and Test a Model Architecture
 
 #### 1. As first step, I decided to convert the images to gray scale thinking this
@@ -53,7 +55,9 @@ The difference between the original data set and the augmented data set is
 the following picture where you can notice that now much more classes are at
 the same level.
 
-![image](https://user-images.githubusercontent.com/29335742/223123478-0fa31e61-c02a-4261-8681-ad20f844b2ee.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223123478-0fa31e61-c02a-4261-8681-ad20f844b2ee.png" width="50%" height="50%">
+</p>
 
 Furthermore, in order to perform the model better I decided to shuffle and
 split the validation and training data. This way I provided part of the
@@ -66,7 +70,9 @@ special in the test section.
 The architecture is based on Le-Net solution, just with some parameters
 changes...
 
-![image](https://user-images.githubusercontent.com/29335742/223123623-b0613847-b6cc-4741-8efa-2461059f7019.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223123623-b0613847-b6cc-4741-8efa-2461059f7019.png" width="70%" height="70%">
+</p>
 
 #### 3. Describe how you trained your model.
 
@@ -130,12 +136,14 @@ Further, at first, I was little biased about the correct classification of
 the ciphers of the speed limit sings, nonetheless my concerns, it seems that
 the model works pretty good over this category.
 
-#### 2. Discuss the model's predictions on these new traffic signs and
-compare the results to predicting on the test set.
+#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set.
 
 Here are the results of the prediction:
 
-![image](https://user-images.githubusercontent.com/29335742/223124274-97939318-a091-491b-b716-a7bb1cbd2661.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223124274-97939318-a091-491b-b716-a7bb1cbd2661.png" width="70%" height="70%">
+</p>
 
 
 The model was able to correctly guess 8 in 10 traffic signs, which gives an
@@ -150,56 +158,74 @@ which as I mentioned before was my biggest concern.
 For the first the model is rather sure that this is a Right of way at the
 next intersection sign, probability of 1.0.
 
-![image](https://user-images.githubusercontent.com/29335742/223124886-887ef014-1cae-4f80-9a24-2dbe0016920d.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223124886-887ef014-1cae-4f80-9a24-2dbe0016920d.png" width="70%" height="70%">
+</p>
 
 For the second the model is rather sure that this is a Right of way at the
 next intersection, probability of 1.0.
 
-![image](https://user-images.githubusercontent.com/29335742/223124972-1a370e75-c980-4865-a997-72b86824dbcc.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223124972-1a370e75-c980-4865-a997-72b86824dbcc.png" width="70%" height="70%">
+</p>
+
 
 For the third the model is rather sure that this is a Yeld, probability of
 1.0.
 
-![image](https://user-images.githubusercontent.com/29335742/223125073-f59b2513-f25d-45e5-9f58-bc53dd86e7e3.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223125073-f59b2513-f25d-45e5-9f58-bc53dd86e7e3.png" width="70%" height="70%">
+</p>
 
 For the fourth the model is rather sure that this is a Speed Limit (
 km/h), probability of 1.0.
 
-![image](https://user-images.githubusercontent.com/29335742/223125143-34c28da6-35df-44ac-af52-3f29d18ec084.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223125143-34c28da6-35df-44ac-af52-3f29d18ec084.png" width="70%" height="70%">
+</p>
 
 For the fifth the model is rather sure that this is a Pedestrians,
 probability of 1.0, but it is completely way off base, even if we look at
 the other probabilities. My model definitely doesn’t work with this sign.
 
-![image](https://user-images.githubusercontent.com/29335742/223125231-255d1fec-0584-477a-9ff3-766271c6d48b.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223125231-255d1fec-0584-477a-9ff3-766271c6d48b.png" width="70%" height="70%">
+</p>
 
 For the sixth the model is quite sure that this is a Priority Road,
 probability of 1.0, but it is completely way off base, even if we look at
 the other probabilities. My model definitely doesn’t work with this sign.
 
-![image](https://user-images.githubusercontent.com/29335742/223125298-1c3d677a-3cfe-4e91-b046-86d19cde5fb4.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223125298-1c3d677a-3cfe-4e91-b046-86d19cde5fb4.png" width="70%" height="70%">
+</p>
 
 For the seventh the model is quite sure that this is a Priority Road,
 probability of 0.98.
 
-![image](https://user-images.githubusercontent.com/29335742/223125388-f57c8d59-a597-4178-8728-1383eeec5c00.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223125388-f57c8d59-a597-4178-8728-1383eeec5c00.png" width="70%" height="70%">
+</p>
 
 For the eight the model is quite that this is a Keep right, probability of
 1.0.
 
-![image](https://user-images.githubusercontent.com/29335742/223125460-798ee157-f765-4651-96a1-0bed43e2c97b.png)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223125460-798ee157-f765-4651-96a1-0bed43e2c97b.png" width="70%" height="70%">
+</p>
 
 
 For the ninth the model is quite sure that this is a Speed Limit (30 km/h),
 probability of 1.0.
 
-![image](https://user-images.githubusercontent.com/29335742/223127611-c6507056-0061-46f3-bc10-65c49c34d325.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223127611-c6507056-0061-46f3-bc10-65c49c34d325.png" width="70%" height="70%">
+</p>
 
 
 For the tenth the model is quite sure that this is a Road work, probability
 of 1.0.
 
-![image](https://user-images.githubusercontent.com/29335742/223127678-62e33042-4f22-4e4a-add1-9ee7ebdc06d5.png)
-
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223127678-62e33042-4f22-4e4a-add1-9ee7ebdc06d5.png" width="70%" height="70%">
+</p>
