@@ -1,5 +1,9 @@
 # Vehicle Detection Project
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223182593-f4a2aace-2af1-4221-85b1-0207437acb4c.gif" 
+</p>
+
 ### Histogram of Oriented Gradients (HOG)
 
 #### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
