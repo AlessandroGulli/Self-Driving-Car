@@ -1,6 +1,10 @@
 
 ### Model Predictive Control - Summary
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223185115-44ee6fcb-8fc1-411f-acf7-abec14aaf36b.gif">
+</p>
+
 The model implemented in this project is the Kinematic model which takes into account within its
 equations the vehicle’s 𝒙𝒕 and 𝒚𝒕 coordinates, orientation angle 𝝍𝒕, and velocity 𝒗𝒕. In addition to that to
 make the model more complete are included the cross-track error 𝒄𝒕𝒆𝒕 and psi error 𝒆𝝍𝒕. Moreover, the
@@ -8,8 +12,9 @@ actuators outputs are the acceleration 𝒂𝒕 and the steering angle 𝜹𝒕.
 time, therefore the model combines the state and the actuations from the previous time step to calculate
 the state for current time step based on the following equations:
 
-![image](https://user-images.githubusercontent.com/29335742/223183576-e640df07-2a85-4d5f-ac46-e0ca2d2bd3c1.png)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223183576-e640df07-2a85-4d5f-ac46-e0ca2d2bd3c1.png" width="50%" height="50%">
+</p>
 where 𝒅𝒕 represents the time elapsed within two steps.
 
 ### Timestep Lenght and Elapsed Duration (N & dt)
