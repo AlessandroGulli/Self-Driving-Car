@@ -1,6 +1,9 @@
 # PID Controller Components
 
 
+![64b39d3a096db66b4bab3540ade6d00d3fbd6063](https://user-images.githubusercontent.com/29335742/223189651-68a67355-5648-4884-96d8-17a3a19b2950.gif)
+
+
 Before introducing my method to tune the three constants of the algorithm I’d like to spend some
 words about the characteristics of each of them.
 
