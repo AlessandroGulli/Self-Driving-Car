@@ -10,11 +10,18 @@ notebook.
 I started by reading in all the `vehicle` and `non-vehicle` images. Here
 is an example of one of each of the `vehicle` and `non-vehicle` classes:
 
+
+![image](https://user-images.githubusercontent.com/29335742/223165038-4a59820e-16ce-4ac2-a317-cdb2eb08f8ef.png)
+
+
 In order to extract HOG features from an image I used the method
 ‘ get_hog_features ’, positioned at the 7th cell in the notebook.
 
 The picture below shows a comparison between car image as well as a non-
 car image and the relative associated histogram of oriented gradients.
+
+![image](https://user-images.githubusercontent.com/29335742/223165328-6ff19a88-5dbf-414d-92bd-0a10ed6655f0.png)
+
 
 The method ‘extract_features’ (8th cell) accepts a list of images paths
 and HOG parameters and produces a flattened array of HOG features for
@@ -62,11 +69,26 @@ targeted a car prediction.
 
 The image below shows the result.
 
+![image](https://user-images.githubusercontent.com/29335742/223165424-b75501ed-dee4-40e8-90e2-54784af71231.png)
+
+
 Therefore, I tried to explore several combinations of windows sizes and
 positions, among a precise sections of the image. Below few examples of
 images with all the spatial possibilities.
 
+![image](https://user-images.githubusercontent.com/29335742/223165601-dfbd9e55-aec4-436a-a96a-7c9ddafa8ed0.png)
+
+![image](https://user-images.githubusercontent.com/29335742/223165793-081ba773-42c3-4e7f-9df1-a21e9f15d6c9.png)
+
+![image](https://user-images.githubusercontent.com/29335742/223165881-5e2c159b-92c1-44af-ad6d-dc6b726ea3dd.png)
+
+![image](https://user-images.githubusercontent.com/29335742/223165966-fe4402a1-f71e-45f4-8215-c078adf54160.png)
+
+
 The image below shows just the rectangles that should identify cars.
+
+![image](https://user-images.githubusercontent.com/29335742/223166051-8e585fe7-def6-4ba6-a493-3f3b4fdb33aa.png)
+
 
 Regarding this last picture we can notice the presence of a couple of
 false positives. In order to avoid this phenomenon is recommended to
@@ -79,16 +101,36 @@ identify with all likelihood cars. The image below is an example of this
 concept. You can notice more bright colours on the overlapped regions of
 interest.
 
+![image](https://user-images.githubusercontent.com/29335742/223166125-f8089055-1b10-4b1d-b058-b0928b79dcf6.png)
+
+
 Follow the same image above after applying a threshold of 1.
+
+![image](https://user-images.githubusercontent.com/29335742/223166182-1f10fa00-1933-4e87-bd15-826533faaab6.png)
+
 
 With the ‘scipy.ndimage.measurements.label()’ is possible to collect
 spatially contiguous areas of the heatmap and assign each label.
 
+![image](https://user-images.githubusercontent.com/29335742/223166287-0e5f9a93-4427-46f8-8837-0efabb3324bd.png)
+
+
 The final result is the following:
+
+![image](https://user-images.githubusercontent.com/29335742/223166366-e2f67845-13c4-4c1e-bd47-9e8aea02d2b7.png)
+
 
 #### 2. Show some examples of test images to demonstrate how your pipeline
 is working. What did you do to optimize the performance of your
 classifier?
+
+![image](https://user-images.githubusercontent.com/29335742/223166458-09ddfcea-4aa7-4d19-ac24-0f1d2a61fa50.png)
+
+![image](https://user-images.githubusercontent.com/29335742/223166525-4761880e-9a6a-4e4a-bbda-0b7d8da78019.png)
+
+![image](https://user-images.githubusercontent.com/29335742/223166610-f2509859-3dd7-4fa8-bf9a-5acb66c64034.png)
+
+![image](https://user-images.githubusercontent.com/29335742/223166691-8afdb4ac-3a72-4df4-8366-339de297880d.png)
 
 
 The result on the images worked pretty well, identifying the vehicles
