@@ -1,9 +1,8 @@
-**Vehicle Detection Project**
+# Vehicle Detection Project
 
-###Histogram of Oriented Gradients (HOG)
+### Histogram of Oriented Gradients (HOG)
 
-####1. Explain how (and identify where in your code) you extracted HOG
-features from the training images.
+#### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
 The code for this step is contained in the first code cell of the IPython
 notebook.
@@ -17,7 +16,6 @@ In order to extract HOG features from an image I used the method
 The picture below shows a comparison between car image as well as a non-
 car image and the relative associated histogram of oriented gradients.
 
-
 The method ‘extract_features’ (8th cell) accepts a list of images paths
 and HOG parameters and produces a flattened array of HOG features for
 each image in the list.
@@ -30,7 +28,7 @@ Subsequently, the features and the labels are then shuffled and split
 into training and test sets, so that in turn they ended up to feed a SVM
 classifier.
 
-####2. Explain how you settled on your final choice of HOG parameters.
+#### 2. Explain how you settled on your final choice of HOG parameters.
 
 I tried various combinations of parameters, accurately tuned, and I made
 my final choice upon the performance of the SVM classifier produced using
@@ -39,18 +37,17 @@ accuracy and speed that made me choose for the YUV color space, 11
 orientations, 16 pixels per cell, 2 cells per block and all channel for
 the color space.
 
-####3. Describe how (and identify where in your code) you trained a
+#### 3. Describe how (and identify where in your code) you trained a
 classifier using your selected HOG features (and color features if you
 used them).
-
 
 I trained a linear SVM using the default classifier parameters and just
 using HOG features alone, even though I was able to achieve a test
 accuracy of 98,2 %.
 
-###Sliding Window Search
+### Sliding Window Search
 
-####1. Describe how (and identify where in your code) you implemented a
+#### 1. Describe how (and identify where in your code) you implemented a
 sliding window search. How did you decide what scales to search and how
 much to overlap windows?
 
@@ -69,9 +66,6 @@ Therefore, I tried to explore several combinations of windows sizes and
 positions, among a precise sections of the image. Below few examples of
 images with all the spatial possibilities.
 
-
-
-
 The image below shows just the rectangles that should identify cars.
 
 Regarding this last picture we can notice the presence of a couple of
@@ -85,19 +79,16 @@ identify with all likelihood cars. The image below is an example of this
 concept. You can notice more bright colours on the overlapped regions of
 interest.
 
-
 Follow the same image above after applying a threshold of 1.
 
 With the ‘scipy.ndimage.measurements.label()’ is possible to collect
 spatially contiguous areas of the heatmap and assign each label.
 
-
 The final result is the following:
 
-####2. Show some examples of test images to demonstrate how your pipeline
+#### 2. Show some examples of test images to demonstrate how your pipeline
 is working. What did you do to optimize the performance of your
 classifier?
-
 
 
 The result on the images worked pretty well, identifying the vehicles
@@ -111,14 +102,14 @@ the beginning, in term of execution speed and accuracy.
 
 ### Video Implementation
 
-####1. Provide a link to your final video output. Your pipeline should
+#### 1. Provide a link to your final video output. Your pipeline should
 perform reasonably well on the entire project video (somewhat wobbly or
 unstable bounding boxes are ok as long as you are identifying the
 vehicles most of the time with minimal false positives.)
 
 The video is attached along with the rest of the project material.
 
-####2. Describe how (and identify where in your code) you implemented
+#### 2. Describe how (and identify where in your code) you implemented
 some kind of filter for false positives and some method for combining
 overlapping bounding boxes.
 
@@ -129,9 +120,9 @@ class. The detection of the last 16 frames are combined and then added
 along with a variable threshold of the heatmap, so that the latter could
 depend on the recent history of the previous rectangles.
 
-###Discussion
+### Discussion
 
-####1. Briefly discuss any problems / issues you faced in your
+#### 1. Briefly discuss any problems / issues you faced in your
 implementation of this project. Where will your pipeline likely fail?
 What could you do to make it more robust?
 
