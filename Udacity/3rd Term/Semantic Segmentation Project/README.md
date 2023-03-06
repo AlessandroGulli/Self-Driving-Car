@@ -10,8 +10,9 @@ The steps were roughly the following:
 
 The method implemented recalls the 2015 paper “Fully Connected Layer” from UC Berkely.
 
-![image](https://user-images.githubusercontent.com/29335742/223194198-6964d593-9ef8-4b1e-affb-5d5360289357.png)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223194198-6964d593-9ef8-4b1e-affb-5d5360289357.png">
+<\p>
 
 The network has been trained with the following parameters:
 
@@ -30,7 +31,9 @@ The final loss amounted at 0.017 at the 10th epoch.
 
 Below a bunch of the results over the images elaborated.
 
-![image](https://user-images.githubusercontent.com/29335742/223194330-f1c07ad2-f210-4cf6-b76f-4b22a7693633.png)
-![image](https://user-images.githubusercontent.com/29335742/223194378-1381fcf4-43d7-4c05-8e73-fb249207c204.png)
-![image](https://user-images.githubusercontent.com/29335742/223194417-43698a06-52be-4f9c-a836-38cd195f6684.png)
-![image](https://user-images.githubusercontent.com/29335742/223194479-846c8933-b899-4cf9-b515-06a5af3fa286.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223194330-f1c07ad2-f210-4cf6-b76f-4b22a7693633.png">
+  <img src="https://user-images.githubusercontent.com/29335742/223194378-1381fcf4-43d7-4c05-8e73-fb249207c204.png">
+  <img src="https://user-images.githubusercontent.com/29335742/223194417-43698a06-52be-4f9c-a836-38cd195f6684.png">
+  <img src="https://user-images.githubusercontent.com/29335742/223194479-846c8933-b899-4cf9-b515-06a5af3fa286.png">
+<\p>
