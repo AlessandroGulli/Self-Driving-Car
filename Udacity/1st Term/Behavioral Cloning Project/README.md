@@ -172,5 +172,6 @@ epoch, which represents the best fit between the two parameters.
 
 I used an adam optimizer so that manually training the learning rate
 wasn't necessary.
-
+<p align="center">
 ![image](https://user-images.githubusercontent.com/29335742/223133109-150367a5-5a3b-4fe4-b874-246a26a1b19c.png)
+</p>
