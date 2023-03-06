@@ -1,8 +1,8 @@
 # Path Planning Project
 
-
-![f57c81ed49793d28204e1840bbdd325bddd8f5bd](https://user-images.githubusercontent.com/29335742/223190598-58b7c8e9-eabe-4dae-b2ea-fa4cb0847bee.gif)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223190598-58b7c8e9-eabe-4dae-b2ea-fa4cb0847bee.gif">
+<\p>
 
 The aim of the project is to drive safely on a highway, equipped with three lanes and many cars around, for 7km without incident;
 this involves avoiding abruptly acceleration and deceleration, containing jerk and preventing collisions with the other vehicles. 
@@ -32,7 +32,10 @@ The states implemented are the following:
 
 Below is illustrated a scheme of the state machine.
 
-![image](https://user-images.githubusercontent.com/29335742/223189175-90250d1f-1245-4ee0-9bab-20c91d5f3b95.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/29335742/223189175-90250d1f-1245-4ee0-9bab-20c91d5f3b95.png">
+<\p>
 
 
 
