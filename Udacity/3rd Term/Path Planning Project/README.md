@@ -1,4 +1,4 @@
-# Path Planning Project - Model Documentation
+# Path Planning Project
 
 
 ![f57c81ed49793d28204e1840bbdd325bddd8f5bd](https://user-images.githubusercontent.com/29335742/223190598-58b7c8e9-eabe-4dae-b2ea-fa4cb0847bee.gif)
