@@ -19,3 +19,4 @@ A list of projects from my Self-Driving Car Engineer course
 * [Functional Safety - ISO26262](https://github.com/AlessandroGulli/Self-DrivingCar-Engineer/tree/master/Udacity/3rd%20Term/Functional%20Safety%20Project)
 * [Path Planning](https://github.com/AlessandroGulli/Self-DrivingCar-Engineer/tree/master/Udacity/3rd%20Term/Path%20Planning%20Project)
 * [Semantic Segmentation of Roads](https://github.com/AlessandroGulli/Self-DrivingCar-Engineer/tree/master/Udacity/3rd%20Term/Semantic%20Segmentation%20Project)
+* [Capstone Project](https://github.com/ducktrA/CarND-Capstone)
