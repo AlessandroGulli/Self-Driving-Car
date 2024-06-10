@@ -3,7 +3,6 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/29335742/223190598-58b7c8e9-eabe-4dae-b2ea-fa4cb0847bee.gif">
 
-<\p>
 
 The aim of the project is to drive safely on a highway, equipped with three lanes and many cars around, for 7km without incident;
 this involves avoiding abruptly acceleration and deceleration, containing jerk and preventing collisions with the other vehicles. 
